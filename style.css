@@ -55,6 +55,31 @@ a:hover{
     text-align: center;
 }
 
+.section02{
+    position: relative;
+    padding-top: 3rem;
+    justify-content: center;
+    
+    
+    color: var(--text-color2);
+}
+
+.section02 h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.considerationList01{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    
+    margin-bottom: 10px;
+}
+
+
 .separator {
   height: 2px;
   width: 350px;
