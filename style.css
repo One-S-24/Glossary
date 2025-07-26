@@ -1,0 +1,121 @@
+*{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #1a1a1a;
+    --bg-color2: #212322;
+    --text-color: #f1f0e1;
+    --text-color2: #9c9c9c;
+}
+ 
+body{
+    background-color: var(--bg-color);
+    
+}
+
+.navBar ul{
+    padding: 2rem;
+    position: relative;
+    align-items: center;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    
+}
+
+a:hover{
+    color: var(--text-color2)
+}
+
+.section01{
+    position: relative;
+    padding-top: 3rem;
+    justify-content: center;
+    color: var(--text-color2);
+    
+}
+
+.glossaryList li{
+    transition: transform 0.3s ease;
+}
+
+.glossaryList li:hover{
+    transform: translateX(3px);
+}
+
+.section01 h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section02{
+    position: relative;
+    padding-top: 3rem;
+    justify-content: center;
+    
+    
+    color: var(--text-color2);
+}
+
+.section02 h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.considerationList01{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    
+    margin-bottom: 10px;
+}
+
+
+.separator {
+  height: 2px;
+  width: 350px;
+  background: linear-gradient(to right, #252525, #202020, #252525);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.glossaryList li{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    
+    margin-bottom: 10px;
+}
+
+
+.spoiler {
+  background-color: rgb(43, 43, 43);
+  color: rgb(43, 43, 43);
+/*   cursor: pointer; */
+  transition: color 0.3s ease;
+  border-radius: 5px;
+  right: 10px;
+  position: absolute;
+}
+
+.spoiler:hover {
+  color: white;
+}
