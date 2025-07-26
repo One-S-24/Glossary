@@ -37,17 +37,25 @@ a{
     
 }
 
+
+
+
 a:hover{
     color: var(--text-color2)
 }
 
 .section01{
     position: relative;
-    padding-top: 3rem;
+    
     justify-content: center;
     color: var(--text-color2);
     
 }
+
+.containerSection01{
+    padding-top: 2rem;
+}
+
 
 .glossaryList li{
     transition: transform 0.3s ease;
