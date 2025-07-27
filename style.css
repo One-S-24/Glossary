@@ -61,6 +61,9 @@ a{
 }
 
 
+.navBar a:hover{
+    color: var(--text-color2)
+}
 
 
 .glossaryList a:hover{
