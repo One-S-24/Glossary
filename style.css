@@ -13,9 +13,7 @@
     --text-color2: #9c9c9c;
 }
 
-.iconBls{
-    
-}
+
 
 html {
   overflow-y: scroll;
@@ -65,8 +63,12 @@ a{
 
 
 
-a:hover{
+.glossaryList a:hover{
     color: var(--text-color2)
+}
+
+.considerationList a:hover{
+    color: var(--text-color)
 }
 
 .section01{
@@ -119,7 +121,6 @@ a:hover{
     width: 300px;
     margin: 0 auto;
     position: relative;
-    
     margin-bottom: 10px;
 }
 
@@ -142,6 +143,10 @@ a:hover{
     margin-bottom: 10px;
 }
 
+.considerationList a{
+    color: #9c9c9c;
+}
+
 .considerationList li{
     justify-content: center;
     align-items: center;
@@ -151,6 +156,8 @@ a:hover{
     
     margin-bottom: 10px;
 }
+
+
 
 .considerationList li{
     transition: transform 0.3s ease;
