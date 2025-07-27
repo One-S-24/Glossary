@@ -6,19 +6,39 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Scope+One&display=swap" rel="stylesheet">
     <title>Glossary</title>
 </head>
+
+<script>
+  function mostrarApartado(id, enlace) {
+    // Oculta todos los apartados con clase visible
+    const apartados = document.querySelectorAll('.apartado');
+    apartados.forEach(ap => {
+      ap.classList.remove('visible');
+    });
+
+    // Muestra el apartado seleccionado
+    const activo = document.getElementById(id);
+    activo.classList.add('visible');
+
+    
+  }
+</script>
+
+
 <body>
     <nav class="navBar">
         <ul>
-            <a href="#Glossary">Glossary</a>
+            <a href="#" onclick="mostrarApartado('Glos')">Glossary</a>
             <a href="https://www.youtube.com/watch?v=qf4OUzIjPQw&list=RDqf4OUzIjPQw&start_radio=1" target="_blank">Huh?</a>
-            <a href="#Considerations">Considerations</a>
+            <a href="#" onclick="mostrarApartado('Cons')">Considerations</a>
+            <a href="https://github.com/One-S-24/Glossary" target="_blank"><i class="fab fa-github"></i></a>
         </ul>
     </nav>
 
-    <section class="section01">
+    <section id="Glos" class="section01 apartado visible">
         
      <div class="containerSection01">
 
@@ -101,24 +121,23 @@ Confirm that the Name related list appears on the Task and Event object detail p
 Your reps designate one contact as the primary contact on the activity. If a rep deletes the primary contact, the next contact on the activity’s related list becomes the new primary contact.
 Worst-case scenario, expect Shared Activities to become available to your sales teams 48 hours after you enable it. But that’s only if you have lots of sales reps who track tons of activities. It’s more likely that Shared Activities becomes available much sooner than 48 hours. Regardless of the time it takes, your sales reps can continue their work in Salesforce during the enabling process.
      -->
-    <section class="section02">
+    <section id="Cons"  class="section02 apartado visible">
 
         <h1>
-            Configuration and Setup considerations
+            <a href="">Configuration and Setup</a>
         </h1>
         <div class="separator"></div>
 
-        <div>
-            <ol class="considerationList01">
-                <li>* Personalized Navigation Consideration.</li>
-                    <div>
-                        <ol class="considerationList01">
-                            <li> - You can reorder, rename, or remove items that you added to a navigation bar, but you can’t remove or rename the default items defined by admins. If an admin removes a default item, the item remains in your personalized app navigation bar, but you can delete it.</li>
-                    
-                        </ol>
-                    </div>
-            </ol>
-        </div>
+        <h1>
+            <a href="">Object Manager and Lightning Experience</a>
+        </h1>
+        <div class="separator"></div>
+
+        <h1>
+            <a href="">Sales and Marketing</a>
+        </h1>
+        <div class="separator"></div>
+
         
     </section>
     
