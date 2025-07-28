@@ -10,23 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Scope+One&display=swap" rel="stylesheet">
     <title>Glossary</title>
     <link rel="icon" href="assets/icons/blasphemous-icon.png" type="image/png">
+    <script src="script.js" defer></script>
 </head>
 
-<script>
-  function mostrarApartado(id, enlace) {
-    // Oculta todos los apartados con clase visible
-    const apartados = document.querySelectorAll('.apartado');
-    apartados.forEach(ap => {
-      ap.classList.remove('visible');
-    });
 
-    // Muestra el apartado seleccionado
-    const activo = document.getElementById(id);
-    activo.classList.add('visible');
-
-    
-  }
-</script>
 
 
 <body>
@@ -122,16 +109,15 @@ Confirm that the Name related list appears on the Task and Event object detail p
 Your reps designate one contact as the primary contact on the activity. If a rep deletes the primary contact, the next contact on the activity’s related list becomes the new primary contact.
 Worst-case scenario, expect Shared Activities to become available to your sales teams 48 hours after you enable it. But that’s only if you have lots of sales reps who track tons of activities. It’s more likely that Shared Activities becomes available much sooner than 48 hours. Regardless of the time it takes, your sales reps can continue their work in Salesforce during the enabling process.
      -->
-    <section id="Cons"  class="section02 apartado">
+    <section id="Cons" class="section02 apartado">
 
-        <div class="containerConsiderations">
+  <div class="containerConsiderations">
+    <h1 class="accordion-header">
+      <a href="javascript:void(0)">Configuration and Setup</a>
+    </h1>
+    <div class="separator"></div>
 
-        <h1>
-            <a href="">Configuration and Setup</a>
-        </h1>
-        <div class="separator"></div>
-
-        <ol class="considerationList">
+    <ol class="considerationList accordion-content">
             <li><a href="https://help.salesforce.com/s/articleView?id=xcloud.user_userdisplay_tabs_lex_considerations.htm&type=5" target="_blank">Personalized Navigation Considerations</a></li>
             <li><a href="https://help.salesforce.com/s/articleView?id=xcloud.basics_list_views_lex_considerations.htm&type=5" target="_blank">Considerations for List Views and Related Lists
 </a></li>
@@ -158,13 +144,12 @@ Worst-case scenario, expect Shared Activities to become available to your sales 
 </div>
 
         <div class="containerConsiderations">
+    <h1 class="accordion-header">
+      <a href="javascript:void(0)">Object Manager and Lightning Experience</a>
+    </h1>
+    <div class="separator"></div>
 
-        <h1>
-            <a href="">Object Manager and Lightning Experience</a>
-        </h1>
-        <div class="separator"></div>
-
-<ol class="considerationList">
+    <ol class="considerationList accordion-content">
             <li><a href="https://help.salesforce.com/s/articleView?id=000384974&language=en_US&type=1" target="_blank">Make a custom field required</a></li>
             <li><a href="https://help.salesforce.com/s/articleView?id=platform.fields_universally_required_field_considerations.htm&language=en_US&type=5" target="_blank">Considerations for Universally Required Fields</a></li>
             <li><a href="https://help.salesforce.com/s/articleView?id=platform.compact_layout_notes.htm&type=5" target="_blank">Compact Layout Limitations and Considerations</a></li>
@@ -184,14 +169,13 @@ Worst-case scenario, expect Shared Activities to become available to your sales 
 
         </div>
 
-<div class="containerConsiderations">
+ <div class="containerConsiderations">
+    <h1 class="accordion-header">
+      <a href="javascript:void(0)">Sales and Marketing</a>
+    </h1>
+    <div class="separator"></div>
 
-        <h1>
-            <a href="">Sales and Marketing</a>
-        </h1>
-        <div class="separator"></div>
-
-        <ol class="considerationList">
+    <ol class="considerationList accordion-content">
             <li><a href="https://help.salesforce.com/s/articleView?id=sales.leads_gen_considerations.htm&type=5" target="_blank">Considerations for Generating Leads</a></li>
             <li><a href="https://help.salesforce.com/s/articleView?id=sales.leads_del_considerations.htm&type=5" target="_blank">Considerations for Deleting Leads</a></li>
             <li><a href="https://help.salesforce.com/s/articleView?id=sales.lead_conversion_mapping.htm&type=5" target="_blank">Lead Conversion Field Mapping</a></li>
@@ -212,6 +196,5 @@ Worst-case scenario, expect Shared Activities to become available to your sales 
 
     </section>
     
-
 </body>
 </html>

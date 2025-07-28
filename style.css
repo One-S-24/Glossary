@@ -9,8 +9,9 @@
 :root{
     --bg-color: #1a1a1a;
     --bg-color2: #212322;
-    --text-color: #f1f0e1;
+    --text-color: #fafafa;
     --text-color2: #9c9c9c;
+    --text-color3: #cacaca;
 }
 
 
@@ -182,4 +183,21 @@ a{
 
 .spoiler:hover {
   color: white;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.containerConsiderations.active .accordion-content {
+  max-height: 1000px; /* altura suficiente para mostrar contenido */
+}
+
+.accordion-header a{
+    color: var(--text-color);
+}
+
+.accordion-header a:hover{
+    color: var(--text-color3);
 }
